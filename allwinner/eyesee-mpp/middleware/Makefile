@@ -354,6 +354,11 @@ define Build/Clean
 endef
 
 define Build/InstallDev
+
+	$(INSTALL_DIR) $(1)/usr/bin/mpp-sample
+	$(CP) $(SRC_COMPILE_DIR)/sample/sample_virvi2venc/sample_virvi2venc $(1)/usr/bin/mpp-sample
+	$(CP) $(SRC_COMPILE_DIR)/sample/sample_virvi2venc/sample_virvi2venc.conf $(1)/usr/bin/mpp-sample
+
 	$(INSTALL_DIR) $(1)/usr/lib/eyesee-mpp/
 	$(INSTALL_DIR) $(1)/usr/include/eyesee-mpp/middleware
 	$(CP) -r $(SRC_COMPILE_DIR)/include $(1)/usr/include/eyesee-mpp/middleware
@@ -670,6 +675,11 @@ endef
 # command to copy the binary file from its current location (in our case the build
 # directory) to the install directory.
 define Package/$(PKG_NAME)/install
+
+	$(INSTALL_DIR) $(1)/usr/bin/mpp-sample
+	$(CP) $(SRC_COMPILE_DIR)/sample/sample_virvi2venc/sample_virvi2venc $(1)/usr/bin/mpp-sample
+	$(CP) $(SRC_COMPILE_DIR)/sample/sample_virvi2venc/sample_virvi2venc.conf  $(1)/usr/bin/mpp-sample
+
 	$(INSTALL_DIR) $(1)/usr/lib/eyesee-mpp
 	$(INSTALL_DIR) $(1)/usr/bin
 	if [ -f $(SRC_COMPILE_DIR)/media/utils/libmedia_utils.so ]; then \
