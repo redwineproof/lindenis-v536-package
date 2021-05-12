@@ -8,7 +8,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=gst1-plugins-bad
-PKG_VERSION:=1.14.0
+PKG_VERSION:=1.14.5
 PKG_RELEASE:=1
 
 PKG_MAINTAINER:=W. Michael Petullo <mike@flyn.org> \
@@ -20,7 +20,7 @@ PKG_LICENSE_FILES:=COPYING.LIB COPYING
 PKG_BUILD_DIR:=$(COMPILE_DIR)/gst-plugins-bad-$(PKG_VERSION)
 PKG_SOURCE:=gst-plugins-bad-$(PKG_VERSION).tar.xz
 PKG_SOURCE_URL:=http://gstreamer.freedesktop.org/src/gst-plugins-bad/
-PKG_MD5SUM:=d7995317530c8773ec088f94d9320909d41da61996b801ebacce9a56af493f97
+PKG_MD5SUM:=44da47126349fde90aed6c5ed0915f3b43f1d8802cd827139eb15a1fff1c6ad2
 
 PKG_BUILD_DEPENDS:= libgstreamer1 gstreamer1-plugins-base
 
