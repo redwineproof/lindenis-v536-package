@@ -356,6 +356,14 @@ endef
 define Build/InstallDev
 
 	$(INSTALL_DIR) $(1)/usr/bin/mpp-sample
+	$(CP) $(SRC_COMPILE_DIR)/sample/sample_venc2muxer/sample_venc2muxer $(1)/usr/bin/mpp-sample
+	$(CP) $(SRC_COMPILE_DIR)/sample/sample_venc2muxer/sample_venc2muxer.conf $(1)/usr/bin/mpp-sample
+	$(CP) $(SRC_COMPILE_DIR)/sample/sample_virvi/sample_virvi $(1)/usr/bin/mpp-sample
+	$(CP) $(SRC_COMPILE_DIR)/sample/sample_virvi/sample_virvi.conf $(1)/usr/bin/mpp-sample
+	$(CP) $(SRC_COMPILE_DIR)/sample/sample_virvi2venc2muxer/sample_vi2venc2muxer $(1)/usr/bin/mpp-sample
+	$(CP) $(SRC_COMPILE_DIR)/sample/sample_virvi2venc2muxer/sample_vi2venc2muxer.conf $(1)/usr/bin/mpp-sample
+	$(CP) $(SRC_COMPILE_DIR)/sample/sample_virvi2vo/sample_virvi2vo $(1)/usr/bin/mpp-sample
+	$(CP) $(SRC_COMPILE_DIR)/sample/sample_virvi2vo/sample_virvi2vo.conf $(1)/usr/bin/mpp-sample
 	$(CP) $(SRC_COMPILE_DIR)/sample/sample_virvi2venc/sample_virvi2venc $(1)/usr/bin/mpp-sample
 	$(CP) $(SRC_COMPILE_DIR)/sample/sample_virvi2venc/sample_virvi2venc.conf $(1)/usr/bin/mpp-sample
 
@@ -677,8 +685,16 @@ endef
 define Package/$(PKG_NAME)/install
 
 	$(INSTALL_DIR) $(1)/usr/bin/mpp-sample
+	$(CP) $(SRC_COMPILE_DIR)/sample/sample_venc2muxer/sample_venc2muxer $(1)/usr/bin/mpp-sample
+	$(CP) $(SRC_COMPILE_DIR)/sample/sample_venc2muxer/sample_venc2muxer.conf $(1)/usr/bin/mpp-sample
+	$(CP) $(SRC_COMPILE_DIR)/sample/sample_virvi/sample_virvi $(1)/usr/bin/mpp-sample
+	$(CP) $(SRC_COMPILE_DIR)/sample/sample_virvi/sample_virvi.conf $(1)/usr/bin/mpp-sample
+	$(CP) $(SRC_COMPILE_DIR)/sample/sample_virvi2venc2muxer/sample_vi2venc2muxer $(1)/usr/bin/mpp-sample
+	$(CP) $(SRC_COMPILE_DIR)/sample/sample_virvi2venc2muxer/sample_vi2venc2muxer.conf $(1)/usr/bin/mpp-sample
+	$(CP) $(SRC_COMPILE_DIR)/sample/sample_virvi2vo/sample_virvi2vo $(1)/usr/bin/mpp-sample
+	$(CP) $(SRC_COMPILE_DIR)/sample/sample_virvi2vo/sample_virvi2vo.conf $(1)/usr/bin/mpp-sample
 	$(CP) $(SRC_COMPILE_DIR)/sample/sample_virvi2venc/sample_virvi2venc $(1)/usr/bin/mpp-sample
-	$(CP) $(SRC_COMPILE_DIR)/sample/sample_virvi2venc/sample_virvi2venc.conf  $(1)/usr/bin/mpp-sample
+	$(CP) $(SRC_COMPILE_DIR)/sample/sample_virvi2venc/sample_virvi2venc.conf $(1)/usr/bin/mpp-sample
 
 	$(INSTALL_DIR) $(1)/usr/lib/eyesee-mpp
 	$(INSTALL_DIR) $(1)/usr/bin
